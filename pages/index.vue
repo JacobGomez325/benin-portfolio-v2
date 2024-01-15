@@ -12,10 +12,9 @@
         animation = "hover:text-secondary hover:bg-primary  transition-all duration-200"
         other-style = "p-4 rounded-md text-xl"
       >Contribute on github</my-button>
-
     </div>
-     
   </header>
+  
   
 </template>
 

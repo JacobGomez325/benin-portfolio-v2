@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   modules: [
     ['@nuxtjs/google-fonts', {
         families: {
-          Inter: {
+          Raleway: {
             wght: '200..900',
             ital: '200..700',
           }

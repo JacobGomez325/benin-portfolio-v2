@@ -5,6 +5,7 @@
 </template>
 
 <script setup lang="ts">
+
 const props = defineProps({
   textColor:{
     type:String,
@@ -12,7 +13,7 @@ const props = defineProps({
   },
   bgColor : {
     type:String,
-    required:false
+    required:false,
     default:'bg-transparent'
   },
   bordere :{
