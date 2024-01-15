@@ -1,0 +1,105 @@
+{
+  "tags": [
+    {
+      "name": "Frontend",
+      "technologies": [
+        { "name": "React.js" },
+        { "name": "Angular" },
+        { "name": "Vue.js" },
+        { "name": "CSS" },
+        { "name": "SASS/LESS" },
+        { "name": "Tailwind CSS" },
+        { "name": "HTML" },
+        { "name": "JSX" }
+      ]
+    },
+    {
+      "name": "Backend",
+      "technologies": [
+        { "name": "Node.js" },
+        { "name": "Python", "frameworks": ["Django", "Flask"] },
+        { "name": "Java", "frameworks": ["Spring"] },
+        { "name": "Ruby", "frameworks": ["Ruby on Rails"] },
+        { "name": "PHP" },
+        { "name": "C#", "frameworks": ["ASP.NET"] }
+      ]
+    },
+    {
+      "name": "Design",
+      "technologies": [
+        { "name": "Adobe Photoshop" },
+        { "name": "Adobe Illustrator" },
+        { "name": "Sketch" },
+        { "name": "Figma" },
+        { "name": "Adobe XD" },
+        { "name": "InVision" }
+      ]
+    },
+    {
+      "name": "Mobile",
+      "technologies": [
+        { "name": "Swift", "platform": "iOS" },
+        { "name": "Objective-C", "platform": "iOS" },
+        { "name": "Java", "platform": "Android" },
+        { "name": "Kotlin", "platform": "Android" },
+        { "name": "React Native" },
+        { "name": "Flutter" }
+      ]
+    },
+    {
+      "name": "DevOps",
+      "technologies": [
+        { "name": "Git", "versionControl": ["GitHub", "GitLab", "Bitbucket"] },
+        { "name": "Jenkins" },
+        { "name": "Travis CI" },
+        { "name": "CircleCI" },
+        { "name": "Docker" },
+        { "name": "Kubernetes" },
+        { "name": "Terraform" },
+        { "name": "Ansible" },
+        { "name": "Puppet" }
+      ]
+    },
+    {
+      "name": "Web3",
+      "technologies": [
+        { "name": "Ethereum" },
+        { "name": "Solidity" },
+        { "name": "Web3.js" },
+        { "name": "Smart Contracts" },
+        { "name": "IPFS" }
+      ]
+    },
+    {
+      "name": "Data",
+      "technologies": [
+        { "name": "SQL" },
+        { "name": "NoSQL" },
+        { "name": "Big Data", "tools": ["Hadoop", "Spark"] },
+        { "name": "Apache Kafka" },
+        { "name": "Apache Flink" },
+        { "name": "Apache Storm" },
+        { "name": "NumPy" },
+        { "name": "Pandas" },
+        { "name": "Scikit-learn" },
+        { "name": "R" },
+        { "name": "TensorFlow" },
+        { "name": "PyTorch" }
+      ]
+    },
+    {
+      "name": "Cybersecurity",
+      "technologies": [
+        { "name": "Firewalls" },
+        { "name": "VPNs" },
+        { "name": "IDS/IPS" },
+        { "name": "OWASP Top 10" },
+        { "name": "Penetration Testing" },
+        { "name": "NIST Cybersecurity Framework" },
+        { "name": "ISO/IEC 27001" },
+        { "name": "SIEM" },
+        { "name": "Digital Forensics" }
+      ]
+    }
+  ]
+}

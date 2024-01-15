@@ -13,7 +13,12 @@ export default {
       colors:{
         primary: "#FBCF16",
         secondary: "#142146",
+        "color-main": "#10172a",
+        "color-card": "#1e293b"
       },
+      gridTemplateColumns: {
+        'main-grid': '4fr 8fr',
+      }
     },
   },
   plugins: [],
