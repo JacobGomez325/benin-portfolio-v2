@@ -6,11 +6,12 @@
         <h1 class="text-2xl font-bold text-white py-3">Filter by</h1>
         <FilterTags 
         :items = tags.categories
+        @send="getTechnologie"
         />
-        <div class="grid grid-cols-3 gap-4 mt-6">
-          <div v-for="(techno,index) in technologies" :key="index" class="flex items-center ">
+        <div class="grid grid-cols-3 gap-4 mt-6" v-if="filterData.showTechnologies">
+          <div v-for="(techno,index) in filterData.technologies" :key="index" class="flex items-center ">
             <input v-model="datas" :id="`${index} ${techno.name}`" type="checkbox" :value="techno.name" class="w-4 h-4  bg-gray-100 border-gray-300 rounded">
-            <label for="default-checkbox" class="ms-2 text-sm font-medium text-white"> {{ techno.name }} </label>
+            <label for="default-checkbox" class="ms-2 text-sm font-medium  whitespace-pre-wrap text-white"> {{ techno.name }} </label>
           </div>
         </div>
       </div>
@@ -33,6 +34,19 @@
 <script setup lang="ts">
 import tags from '@/data/tags.json'
 import  {type Card} from '@/types/card.type'
+import type { Technology } from '~/types/tags.type';
+
+type FilterData  = {
+  showTechnologies:boolean,
+  technologies:Technology[]
+}
+const filterData = reactive<FilterData>({
+  showTechnologies:false,
+  technologies:[]
+})
+
+
+
 
 const cardProps = reactive<Card>({
   name: "Gomez jacob",
@@ -88,9 +102,14 @@ const cards = {
       github: "jacobGomez325",
       linkedin: "jacob-ambroise-david-gomez-989b151b9",
     },
-  }
+}
 
-console.log(tags)
+function getTechnologie(item:Technology[]) {
+  filterData.technologies = item
+  filterData.showTechnologies = true
+}
+
+
 
 </script>
 

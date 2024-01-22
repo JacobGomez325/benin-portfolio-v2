@@ -2,6 +2,7 @@
   "categories": [
     {
       "name": "Frontend",
+      "isActive": true,
       "technologies": [
         { "name": "React.js" },
         { "name": "Angular" },
@@ -15,6 +16,7 @@
     },
     {
       "name": "Backend",
+      "isActive": false,
       "technologies": [
         { "name": "Node.js" },
         { "name": "Python", "frameworks": ["Django", "Flask"] },
@@ -26,6 +28,7 @@
     },
     {
       "name": "Design",
+      "isActive": false,
       "technologies": [
         { "name": "Adobe Photoshop" },
         { "name": "Adobe Illustrator" },
@@ -37,6 +40,7 @@
     },
     {
       "name": "Mobile",
+      "isActive": false,
       "technologies": [
         { "name": "Swift", "platform": "iOS" },
         { "name": "Objective-C", "platform": "iOS" },
@@ -48,6 +52,7 @@
     },
     {
       "name": "DevOps",
+      "isActive": false,
       "technologies": [
         { "name": "Git", "versionControl": ["GitHub", "GitLab", "Bitbucket"] },
         { "name": "Jenkins" },
@@ -62,6 +67,7 @@
     },
     {
       "name": "Web3",
+      "isActive": false,
       "technologies": [
         { "name": "Ethereum" },
         { "name": "Solidity" },
@@ -72,6 +78,7 @@
     },
     {
       "name": "Data",
+      "isActive": false,
       "technologies": [
         { "name": "SQL" },
         { "name": "NoSQL" },
@@ -89,6 +96,7 @@
     },
     {
       "name": "Cybersecurity",
+      "isActive": false,
       "technologies": [
         { "name": "Firewalls" },
         { "name": "VPNs" },

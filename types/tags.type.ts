@@ -4,6 +4,7 @@ export type Technology = {
 
 export type Categories = {
   name: string;
+  isActive: boolean,
   technologies: Technology[];
 }
 
