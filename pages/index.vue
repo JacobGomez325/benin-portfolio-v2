@@ -32,19 +32,19 @@
 
 <script setup lang="ts">
 import tags from '@/data/tags.json'
-import  {type Card} from '@/app/types/card.type'
+import  {type Card} from '@/types/card.type'
 
 const cardProps = reactive<Card>({
   name: "Gomez jacob",
-    link: "https://www.linkedin.com/in/jacob-ambroise-david-gomez-989b151b9/",
-    linkSlug:"jacobgomez.dev",
-    tags: ["frontend", "backend", "design"],
-    description:"FullStack js web developer, working with #vue, #nuxt #js #ts #adonis",
-    socials: {
-      twitter: "gojanda325",
-      github: "jacobGomez325",
-      linkedin: "jacob-ambroise-david-gomez-989b151b9",
-    },
+  link: "https://www.linkedin.com/in/jacob-ambroise-david-gomez-989b151b9/",
+  linkSlug:"jacobgomez.dev",
+  tags: ["frontend", "backend", "design"],
+  description:"FullStack js web developer, working with #vue, #nuxt #js #ts #adonis",
+  socials: {
+    twitter: "gojanda325",
+    github: "jacobGomez325",
+    linkedin: "jacob-ambroise-david-gomez-989b151b9",
+  },
 
 })
 
@@ -99,3 +99,4 @@ console.log(tags)
 </style>
 
 
+~/types/card.type

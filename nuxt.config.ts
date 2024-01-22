@@ -17,5 +17,6 @@ export default defineNuxtConfig({
           }
         }
     }],
+    '@vue-macros/nuxt',
   ],
 })

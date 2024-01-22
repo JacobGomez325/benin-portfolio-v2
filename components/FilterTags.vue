@@ -15,14 +15,7 @@
 </template>
 
 <script setup lang="ts">
- type Technology = {
-  name: string;
-}
-
-type Categories = {
-  name: string;
-  technologies: Technology[];
-}
+import type {Categories} from '@/types/tags.type'
 
 const props = defineProps<{
   items:Categories[]
@@ -39,4 +32,4 @@ function toogleTags(data: any) {
 </script>
 
 
-<style></style>
+<style></style>~/types/card.type

@@ -27,19 +27,8 @@
 </template>
 
 <script setup lang="ts">
-type Socials = {
-  twitter:  string,
-  github:   string,
-  linkedin: string,
-}
-const props = defineProps<{
-  name:string,
-  link:string,
-  linkSlug:string,
-  socials:Socials,
-  description:string,
-  tags: string[]
-}>()
+import type {Card} from '@/types/card.type'
+const props = defineProps<Card>()
 </script>
 
-<style scoped></style>
+<style scoped></style>~/types/card.type
