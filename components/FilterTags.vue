@@ -1,6 +1,7 @@
 <template>
 
   <div class="flex flex-wrap ">
+    
     <div v-for="(item, index) in props.items" :key="index" :class="{
       'bg-primary': item.isActive === true,
       'border border-primary hover:bg-primary text-white  hover:text-black': item.isActive === false,
@@ -22,16 +23,14 @@ const props = defineProps<{
   items:Categories[]
 }>()
 
-
+console.log('init props',props.items)
 function toogleTags(item: Categories) {
   props.items.forEach((element:Categories) => {
     if(element.isActive === true) {
       element.isActive = false
       item.isActive = true
-      console.log(element)
     }
   })
-  console.log(props.items)
   emits('send',item.technologies)
 }
 

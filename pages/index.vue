@@ -5,7 +5,7 @@
       <div class="">
         <h1 class="text-2xl font-bold text-white py-3">Filter by</h1>
         <FilterTags 
-        :items = tags.categories
+        :items = myTags
         @send="getTechnologie"
         />
         <div class="grid grid-cols-3 gap-4 mt-6" v-if="filterData.showTechnologies">
@@ -34,7 +34,7 @@
 <script setup lang="ts">
 import tags from '@/data/tags.json'
 import  {type Card} from '@/types/card.type'
-import type { Technology } from '~/types/tags.type';
+import type { Technology,Categories } from '~/types/tags.type';
 
 type FilterData  = {
   showTechnologies:boolean,
@@ -44,6 +44,8 @@ const filterData = reactive<FilterData>({
   showTechnologies:false,
   technologies:[]
 })
+
+const myTags = reactive<Categories[]>(tags.categories)
 
 
 
