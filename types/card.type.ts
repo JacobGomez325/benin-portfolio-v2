@@ -12,8 +12,9 @@ export type Card = {
   name:string,
   link:string,
   linkSlug:string,
-  socials:Socials,
+  socials:Socials | undefined | null,
   description:string,
+  technology:string[]
   tags: string[]
 }
 

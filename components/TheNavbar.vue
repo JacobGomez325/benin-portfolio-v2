@@ -9,7 +9,7 @@
     <div class="flex space-x-4 items-center ">
       <MySearchBar styles="bg-white text-md rounded-md outline-none px-4 py-2 placeholder-black " placeholdere = "Search a portfolio ..." />
       <my-button 
-        text-color = "text-secondary font-semibold " 
+        text-color = "text-secondary font-bold " 
         bg-color= "bg-primary"
         bordere  = "border border-primary outline-none"
         animation = "hover:opacity-80  transition-all duration-200"

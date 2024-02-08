@@ -5,7 +5,8 @@
       <IconsLink color="text-primary" height="1.6em" width="1.6em" />
       <a :href="props.link" target="_blank" class="text-white font-semibold">{{ props.linkSlug }} </a>
     </p>
-    <p v-if="props.socials" class="flex space-x-2 items-center ">
+    
+    <p v-if="props.socials" class="flex space-x-2 items-center my-2">
       <a v-if="props.socials?.twitter" :href="`https://twitter.com/${props.socials?.twitter}`" target="_blank" >
         <IconsSocialsTwitter color="text-[#1d9bf0]" height="1.8em" width="1.8em" />
       </a>
@@ -16,13 +17,22 @@
         <IconsSocialsLinkedin color="text-[#0a66c2]" height="1.8em" width="1.8em" />
       </a>
     </p>
-    <div class="flex flex-wrap">
-      <div v-for="(tag, i) in tags" :key="i"
-        class="flex xl:space-x-3 space-x-2 items-center border border-primary text-white m-2 px-3 py-1 cursor-pointer  rounded-2xl transition-all duration-200 ">
+    
+    <div class=" pt-4 pb-2 ">
+      <span  
+      v-for="(technology,index) in props.technology"
+      :key="index"
+      class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{{ technology }}</span>
+    </div>
+   
+    <div class="flex flex-wrap space-x-1">
+      <div v-for="(tag, i) in props.tags" :key="i"
+        class="flex lg:space-x-2 space-x-1 items-center border border-primary text-white my-2 px-3 py-1 cursor-pointer  rounded-2xl transition-all duration-200 ">
         <span class="block bg-white w-2 h-2 rounded-full "></span>
-        <span class=" font-semibold  "> {{ tag }} </span>
+        <span class=" font-semibold text-sm  "> {{ tag }}  </span>
       </div>
     </div>
+   
   </div>
 </template>
 
@@ -31,4 +41,4 @@ import type {Card} from '@/types/card.type'
 const props = defineProps<Card>()
 </script>
 
-<style scoped></style>~/types/card.type
+<style scoped></style>

@@ -5,12 +5,15 @@
       "isActive": true,
       "technologies": [
         { "name": "React.js" },
+        { "name": "Next.js" },
         { "name": "Angular" },
         { "name": "Vue.js" },
+        { "name": "Nuxt.js" },
         { "name": "CSS" },
         { "name": "SASS/LESS" },
         { "name": "Tailwind CSS" },
         { "name": "HTML" },
+        { "name": "HTMX" },
         { "name": "JSX" }
       ]
     },
@@ -18,12 +21,23 @@
       "name": "Backend",
       "isActive": false,
       "technologies": [
-        { "name": "Node.js" },
-        { "name": "Python", "frameworks": ["Django", "Flask"] },
-        { "name": "Java", "frameworks": ["Spring"] },
-        { "name": "Ruby", "frameworks": ["Ruby on Rails"] },
-        { "name": "PHP" },
-        { "name": "C#", "frameworks": ["ASP.NET"] }
+        { "name": "Node.js - Express" },
+        { "name": "Node.js - NestJS" },
+        { "name": "Node.js - AdonisJS" },
+        { "name": "Node.js - Koa" },
+        { "name": "Node.js - Sails.js" },
+        { "name": "Python - Django" },
+        { "name": "Python - Flask" },
+        { "name": "Java - Spring Boot" },
+        { "name": "Java - Play Framework" },
+        { "name": "Java - Micronaut" },
+        { "name": "Ruby - Ruby on Rails" },
+        { "name": "Ruby - Sinatra" },
+        { "name": "PHP - Laravel" },
+        { "name": "PHP - Symfony" },
+        { "name": "PHP - CodeIgniter" },
+        { "name": "C# - .NET Core" },
+        { "name": "C# - ASP.NET MVC" }
       ]
     },
     {
@@ -42,10 +56,10 @@
       "name": "Mobile",
       "isActive": false,
       "technologies": [
-        { "name": "Swift", "platform": "iOS" },
-        { "name": "Objective-C", "platform": "iOS" },
-        { "name": "Java", "platform": "Android" },
-        { "name": "Kotlin", "platform": "Android" },
+        { "name": "Swift - iOS" },
+        { "name": "Objective-C - iOS" },
+        { "name": "Java - Android" },
+        { "name": "Kotlin - Android" },
         { "name": "React Native" },
         { "name": "Flutter" }
       ]
@@ -54,7 +68,7 @@
       "name": "DevOps",
       "isActive": false,
       "technologies": [
-        { "name": "Git", "versionControl": ["GitHub", "GitLab", "Bitbucket"] },
+        { "name": "Git - versionControl: GitHub, GitLab, Bitbucket" },
         { "name": "Jenkins" },
         { "name": "Travis CI" },
         { "name": "CircleCI" },
@@ -82,7 +96,7 @@
       "technologies": [
         { "name": "SQL" },
         { "name": "NoSQL" },
-        { "name": "Big Data", "tools": ["Hadoop", "Spark"] },
+        { "name": "Big Data - tools: Hadoop, Spark" },
         { "name": "Apache Kafka" },
         { "name": "Apache Flink" },
         { "name": "Apache Storm" },

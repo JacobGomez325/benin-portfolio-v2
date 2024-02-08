@@ -23,7 +23,6 @@ const props = defineProps<{
   items:Categories[]
 }>()
 
-console.log('init props',props.items)
 function toogleTags(item: Categories) {
   props.items.forEach((element:Categories) => {
     if(element.isActive === true) {
