@@ -7,7 +7,10 @@
     </div>
 
     <div class="flex space-x-4 items-center ">
-      <MySearchBar styles="bg-white text-md rounded-md outline-none px-4 py-2 placeholder-black " placeholdere = "Search a portfolio ..." />
+      <MySearchBar 
+        v-model="search"
+        styles="bg-white text-md rounded-md outline-none px-4 py-2 placeholder-black " 
+        placeholdere = "Search a portfolio ..." />
       <my-button 
         text-color = "text-secondary font-bold " 
         bg-color= "bg-primary"
@@ -15,6 +18,7 @@
         animation = "hover:opacity-80  transition-all duration-200"
         other-style = "px-4 py-2 rounded-md text-md"
       >add your portfolio</my-button>
+      
     </div>
     
   </div>
@@ -22,6 +26,11 @@
 </template>
 
 <script setup lang="ts">
+  const search = ref<string>('')
+  const emits = defineEmits(['sendData'])
+  watch(search, (newValue:string, oldValue:string) => {
+    emits('sendData',newValue)
+  })
 
 </script>
 
