@@ -19,10 +19,10 @@
       <IconsLink color="text-primary" height="1.6em" width="1.6em" />
       <a :href="props.link" target="_blank" class="text-white font-semibold">{{ props.linkSlug }} </a>
     </p>
-    <div class="flex flex-wrap space-x-1">
+    <div class="flex flex-wrap space-x-2">
       <div v-for="(tag, i) in props.tags" :key="i"
-        class="flex lg:space-x-2 space-x-1 items-center border border-primary text-white my-2 px-3 py-1 cursor-pointer  rounded-2xl transition-all duration-200 ">
-        <span class="block bg-white w-2 h-2 rounded-full "></span>
+        class="flex lg:space-x-2 space-x-2 items-center border hover:bg-primary hover:text-black border-primary text-white my-2 px-3 py-1 cursor-pointer  rounded-2xl transition-all duration-200 ">
+        <span class="block bg-white   w-2 h-2 rounded-full "></span>
         <span class=" font-semibold text-sm  "> {{ tag }}  </span>
       </div>
     </div>

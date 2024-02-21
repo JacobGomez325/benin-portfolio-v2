@@ -1,5 +1,5 @@
 <template>
-  <TheHeader @send-data="sendData" />
+  <TheHeader @get-search-value="getSearchValue" />
   <main class="bg-color-main">
     <div class="container mx-auto py-8 grid lg:grid-cols-main-grid lg:gap-6 sm:grid-cols-1 sm:gap-4">
       <div class=" sticky h-[280px] top-[1px]">
@@ -15,11 +15,10 @@
           </div>
         </div>
       </div>
-
-     
+      
       <div class="grid grid-cols-2 gap-4 "> 
         <Cards
-          v-for="(item,index) in cardProps " 
+          v-for="(item,index) in filteredDevelopers " 
           :key="index"
           v-bind="item"
         />
@@ -54,16 +53,34 @@ const myTags = reactive<Categories[]>(tags.categories)
 const cardProps = reactive<Card[]>(usersDev)
 // technology list data
 const technologyCheckbox = ref([])
-const search = ref<string>('')
+const searchQuery = ref<string>('')
 
 function getTechnologie(item:Technology[]) {
   filterData.technologies = item
   filterData.showTechnologies = true
 }
 
-function sendData(searchItem:string) {
-  search.value = searchItem
+// get Search value in the Header component 
+function getSearchValue(searchItem:string) {
+  searchQuery.value = searchItem
 }
+
+const filteredDevelopers = computed(() => {
+  return cardProps.filter(developer => {
+    // Recherche par tags
+  const tagsMatch = developer.tags.some(tag =>
+    tag.toLowerCase().includes(searchQuery.value.toLowerCase())
+  )
+  // Recherche par technologies
+  const techMatch = developer.technology.some(tech =>
+    tech.toLowerCase().includes(searchQuery.value.toLowerCase())
+  );
+  // Retourne vrai si le développeur a un tag ou une technologie correspondante
+  return tagsMatch || techMatch 
+  })
+})
+
+
 
 
 

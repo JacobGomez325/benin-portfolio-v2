@@ -27,9 +27,9 @@
 
 <script setup lang="ts">
   const search = ref<string>('')
-  const emits = defineEmits(['sendData'])
+  const emits = defineEmits(['getSearchValue'])
   watch(search, (newValue:string, oldValue:string) => {
-    emits('sendData',newValue)
+    emits('getSearchValue',newValue)
   })
 
 </script>
