@@ -1,8 +1,15 @@
 {
+  
   "categories": [
     {
-      "name": "Frontend",
+      "name":"All",
       "isActive": true,
+      "technologies": []
+
+    },
+    {
+      "name": "Frontend",
+      "isActive": false,
       "technologies": [
         { "name": "React.js" },
         { "name": "Next.js" },

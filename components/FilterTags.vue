@@ -30,6 +30,7 @@ function toogleTags(item: Categories) {
       item.isActive = true
     }
   })
+  
   emits('send',item.technologies)
 }
 
