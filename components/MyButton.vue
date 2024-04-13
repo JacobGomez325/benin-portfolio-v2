@@ -1,5 +1,5 @@
 <template>
-  <button :class="`${props.textColor} ${props.bgColor} ${props.bordere} ${props.animation} ${props.otherStyle} `">
+  <button :class="`${props.textColor} ${props.bgColor} ${props.bordere} ${props.animation} ${props.otherStyle} ${props.display} `">
     <slot></slot>
   </button>
 </template>
@@ -27,6 +27,10 @@ const props = defineProps({
   otherStyle : {
     type:String,
     required:true
+  },
+  display: {
+    type:String,
+    required:false
   }
 })
 

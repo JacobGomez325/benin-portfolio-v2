@@ -17,6 +17,7 @@
         bordere  = "border border-primary outline-none"
         animation = "hover:opacity-80  transition-all duration-200"
         other-style = "px-4 py-2 rounded-md text-md"
+        display="md:block hidden"
       >add your portfolio</my-button>
       
     </div>
