@@ -1,9 +1,10 @@
 <template>
   <TheHeader @get-search-value="getSearchValue" />
+ 
   <main id="top" class="bg-color-main ">
     <div class="md:container md:mx-auto px-4 md:px-0  py-8 grid lg:grid-cols-main-grid lg:gap-6 sm:grid-cols-1 sm:gap-4">
       <!-- Mon filtre -->
-      <div :class="{'sticky h-[280px] top-[1px]': filteredDevelopers.length >= 4 || filtreUserData.length >= 4,'static h-full': filteredDevelopers.length < 4 || filtreUserData.length < 4 }" >
+      <div  :class="{'sticky h-[580px] top-[1px]': filteredDevelopers.length >= 4 ,'static h-full':  filteredDevelopers.length < 4  }" >
         <h1 class="text-2xl font-bold text-white py-3">Filter by</h1>
         <FilterTags 
         :items = myTags
@@ -20,19 +21,31 @@
      
       
       <!-- Mon contenue principal -->
-      <div v-if="isThisSearch" class="grid md:grid-cols-2 grid-cols-1 gap-4 "> 
-        <Cards
+      <div v-if="isThisSearch" > 
+        <div v-if="filteredDevelopers.length === 0">
+          <empty>Aucun résultat !!!</empty>
+        </div>
+        <div v-else class="grid md:grid-cols-2 grid-cols-1 gap-4 ">
+          <Cards
           v-for="(item,index) in filteredDevelopers " 
           :key="index"
           v-bind="item"
         />
+        </div>
+       
       </div>
-      <div v-else class="grid md:grid-cols-2 grid-cols-1 gap-4 "> 
-        <Cards
-          v-for="(item,index) in filtreUserData" 
-          :key="index"
-          v-bind="item"
-        />
+      <div v-else> 
+        <div v-if="filtreUserData.length === 0">
+          <empty>Aucun résultat  !!!</empty>
+        </div>
+        <div   v-else class="grid md:grid-cols-2 grid-cols-1 gap-4 ">
+          <Cards
+            v-for="(item,index) in filtreUserData" 
+            :key="index"
+            v-bind="item"
+          />
+        </div>
+       
       </div>
       
     </div>
@@ -72,7 +85,9 @@ const searchQuery = ref<string>('')
 
 function getTechnologie(item:Technology[]) {
   filterData.technologies = item
+  technologyCheckbox.value = []
   filterData.showTechnologies = true
+ 
   
 }
 
@@ -82,7 +97,7 @@ function getSearchValue(searchItem:string) {
 }
 
 const filteredDevelopers = computed(() => {
-  cardProps =  cardProps.filter(developer => {
+  return cardProps.filter(developer => {
     // Recherche par nom de développeur
     const nameMatch = developer.name.toLowerCase().includes(searchQuery.value.toLowerCase());
 
@@ -99,7 +114,6 @@ const filteredDevelopers = computed(() => {
     // Retourne vrai si le développeur a un nom, un tag ou une technologie correspondante
     return nameMatch || tagsMatch || techMatch
   })
-  return cardProps
  
 })
 
@@ -124,9 +138,9 @@ watch(technologyCheckbox, (newValue:string[], oldValue:string[]) => {
   
 })
 watch(searchQuery, (newValue:string, oldValue:string) => {
-  alert('ddd')
+  //alert('ddd')
   isThisSearch.value = true
-  technologyCheckbox.value = []
+  //technologyCheckbox.value = []
 })
 
 
