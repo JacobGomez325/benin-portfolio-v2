@@ -113,9 +113,23 @@ export const usersDev:Card[] = [
       github: "NemesisX1",
       linkedin: "juniormedehou",
     },
+  },
+
+  { name: "DOSSEH Shalom",
+    link: "https://www.linkedin.com/in/shalom-dosseh-4a484a262/",
+    linkSlug:"#",
+    tags: [Category.Data, Category.DevOps, Category.Web3],
+    technology:[DevOpsTechnology.Docker, DataTechnology.Pandas,
+    DataTechnology.Numpy, DataTechnology.ScikitLearn, DataTechnology.Tensorflow,
+    DataTechnology.SQL, DevOpsTechnology.Git_versionControl, DevOpsTechnology.Jenkins,
+    DevOpsTechnology.Ansible, DevOpsTechnology.Kubernetes, Web3Technology.Solidity],
+    description:"Problem Solver and Data Driven Innovator",
+    socials: {
+      twitter: "",
+      github: "AnalyticAce",
+      linkedin: "shalom-dosseh-4a484a262",
+    },
   }
-
-
 ]
 
 
