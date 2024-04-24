@@ -89,6 +89,7 @@ export const usersDev:Card[] = [
     },
   },
   {
+
     name: "Judicaël AHYI",
     link: "https://kloo.me/o9i1ysqmdp",
     linkSlug:"judicael-ahyi.com",
@@ -101,6 +102,20 @@ export const usersDev:Card[] = [
       linkedin: "judicael-ahyi",
     },
   },
+    name: "MEDEHOU Elikem",
+    link: "https://www.linkedin.com/in/juniormedehou/",
+    linkSlug:"elikemmedehou.com",
+    tags: [Category.Mobile, Category.Backend,Category.DevOps],
+    technology:[BackendTechnology.NodeJS_Express,FrontendTechnology.NextJS,BackendTechnology.NodeJS_Express,MobileTechnology.Flutter, DevOpsTechnology.Docker],
+    description:"Flutter and Backend Developer",
+    socials: {
+      twitter: "elikemmedehou",
+      github: "NemesisX1",
+      linkedin: "juniormedehou",
+    },
+  }
+
+
 ]
 
 

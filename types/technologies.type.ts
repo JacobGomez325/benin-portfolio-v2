@@ -29,7 +29,8 @@ export enum BackendTechnology {
   PHP_Symfony = "PHP - Symfony",
   PHP_CodeIgniter = "PHP - CodeIgniter",
   CSharp_DOTNETCore = "C# - .NET Core",
-  CSharp_ASPNET_MVC = "C# - ASP.NET MVC"
+  CSharp_ASPNET_MVC = "C# - ASP.NET MVC",
+  Bun_ElysiaJS =  "Bun - Elysia.js",
 }
 
 
