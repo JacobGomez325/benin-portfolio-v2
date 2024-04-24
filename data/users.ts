@@ -88,19 +88,20 @@ export const usersDev:Card[] = [
       linkedin: "rhétice-ainon-849557196",
     },
   },
-   {
-    name: "AINON Rhétice",
-    link: "https://www.linkedin.com/in/rh%C3%A9tice-ainon-849557196/",
-    linkSlug:"rheticeainon.dev",
-    tags: [Category.Frontend, Category.Backend,Category.Mobile],
-    technology:[BackendTechnology.Python_Django,FrontendTechnology.ReactJS,BackendTechnology.PHP_Laravel,MobileTechnology.ReactNative],
-    description:"FullStack web and mobile developer, working with #js #python #php, #react #reactnative #django #laravel",
+  {
+    name: "MEDEHOU Elikem",
+    link: "https://www.linkedin.com/in/juniormedehou/",
+    linkSlug:"elikemmedehou.com",
+    tags: [Category.Mobile, Category.Backend,Category.DevOps],
+    technology:[BackendTechnology.NodeJS_Express,FrontendTechnology.NextJS,BackendTechnology.NodeJS_Express,MobileTechnology.Flutter, DevOpsTechnology.Docker],
+    description:"Flutter and Backend Developer",
     socials: {
-      twitter: "RheticeAinon",
-      github: "DRhetice",
-      linkedin: "rhétice-ainon-849557196",
+      twitter: "elikemmedehou",
+      github: "NemesisX1",
+      linkedin: "juniormedehou",
     },
-  },
+  }
+
 ]
 
 
