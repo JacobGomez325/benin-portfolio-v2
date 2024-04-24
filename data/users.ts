@@ -88,6 +88,19 @@ export const usersDev:Card[] = [
       linkedin: "rhétice-ainon-849557196",
     },
   },
+  {
+    name: "MEDEHOU Elikem",
+    link: "https://www.linkedin.com/in/juniormedehou/",
+    linkSlug:"elikemmedehou.com",
+    tags: [Category.Mobile, Category.Backend,Category.DevOps],
+    technology:[BackendTechnology.NodeJS_Express,FrontendTechnology.NextJS,BackendTechnology.NodeJS_Express,MobileTechnology.Flutter, DevOpsTechnology.Docker],
+    description:"Flutter and Backend Developer",
+    socials: {
+      twitter: "elikemmedehou",
+      github: "NemesisX1",
+      linkedin: "juniormedehou",
+    },
+  }
 ]
 
 
