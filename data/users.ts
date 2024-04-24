@@ -88,6 +88,19 @@ export const usersDev:Card[] = [
       linkedin: "rhétice-ainon-849557196",
     },
   },
+   {
+    name: "AINON Rhétice",
+    link: "https://www.linkedin.com/in/rh%C3%A9tice-ainon-849557196/",
+    linkSlug:"rheticeainon.dev",
+    tags: [Category.Frontend, Category.Backend,Category.Mobile],
+    technology:[BackendTechnology.Python_Django,FrontendTechnology.ReactJS,BackendTechnology.PHP_Laravel,MobileTechnology.ReactNative],
+    description:"FullStack web and mobile developer, working with #js #python #php, #react #reactnative #django #laravel",
+    socials: {
+      twitter: "RheticeAinon",
+      github: "DRhetice",
+      linkedin: "rhétice-ainon-849557196",
+    },
+  },
 ]
 
 
