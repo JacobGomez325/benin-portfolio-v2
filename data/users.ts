@@ -93,7 +93,7 @@ export const usersDev:Card[] = [
     name: "Judicaël AHYI",
     link: "https://kloo.me/o9i1ysqmdp",
     linkSlug:"judicael-ahyi.com",
-    tags: [Category.Software, Category.Backend, Category.DevOps, Category.CybersecurityTechnology],
+    tags: [Category.SWE, Category.Backend, Category.DevOps, Category.Cybersecurity],
     technology:[FrontendTechnology.HTML,FrontendTechnology.CSS,FrontendTechnology.TailwindCSS,FrontendTechnology.VueJS,FrontendTechnology.NuxtJS, BackendTechnology.NodeJS_AdonisJS,DevOpsTechnology.Docker],
     description:"Software Engineer (#PHP #Laravel #Python #Java) & DevSecOps (Junior).",
     socials: {
