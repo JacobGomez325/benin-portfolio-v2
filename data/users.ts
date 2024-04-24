@@ -102,7 +102,7 @@ export const usersDev:Card[] = [
       linkedin: "judicael-ahyi",
     },
   },
-    name: "MEDEHOU Elikem",
+  { name: "MEDEHOU Elikem",
     link: "https://www.linkedin.com/in/juniormedehou/",
     linkSlug:"elikemmedehou.com",
     tags: [Category.Mobile, Category.Backend,Category.DevOps],
