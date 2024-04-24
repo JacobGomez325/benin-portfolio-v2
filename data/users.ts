@@ -89,7 +89,20 @@ export const usersDev:Card[] = [
     },
   },
   {
-    name: "MEDEHOU Elikem",
+
+    name: "Judicaël AHYI",
+    link: "https://kloo.me/o9i1ysqmdp",
+    linkSlug:"judicael-ahyi.com",
+    tags: [Category.Software, Category.Backend, Category.DevOps, Category.CybersecurityTechnology],
+    technology:[FrontendTechnology.HTML,FrontendTechnology.CSS,FrontendTechnology.TailwindCSS,FrontendTechnology.VueJS,FrontendTechnology.NuxtJS, BackendTechnology.NodeJS_AdonisJS,DevOpsTechnology.Docker],
+    description:"Software Engineer (#PHP #Laravel #Python #Java) & DevSecOps (Junior).",
+    socials: {
+      twitter: "JudicaelAhyi",
+      github: "ludndev",
+      linkedin: "judicael-ahyi",
+    },
+  },
+  { name: "MEDEHOU Elikem",
     link: "https://www.linkedin.com/in/juniormedehou/",
     linkSlug:"elikemmedehou.com",
     tags: [Category.Mobile, Category.Backend,Category.DevOps],
@@ -101,6 +114,7 @@ export const usersDev:Card[] = [
       linkedin: "juniormedehou",
     },
   }
+
 
 ]
 
