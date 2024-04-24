@@ -13,13 +13,15 @@
         animation = "hover:opacity-80  transition-all duration-200"
         other-style = "px-4 py-2 rounded-md text-md my-2"
         display="md:hidden block"
-      >add your portfolio</my-button>
+      >    
+      <a href="https://github.com/JacobGomez325/benin-portfolio-v2" target="_blank">add your portfolio</a>
+      </my-button>
       <my-button 
         text-color = "text-white font-bold " 
         bordere  = "border border-primary outline-none"
         animation = "hover:text-secondary hover:bg-primary  transition-all duration-200"
         other-style = "md:p-4 px-4 py-2 rounded-md text-xl"
-      > <a href="https://github.com/JacobGomez325/benin-porfolio-dev" class="text-sm md:text-base"target="_blank">Contribute on github </a> </my-button>
+      > <a href="https://github.com/JacobGomez325/benin-portfolio-v2" class="text-sm md:text-base"target="_blank">Contribute on github </a> </my-button>
     </div>
   </header>
 </template>

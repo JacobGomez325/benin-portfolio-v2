@@ -101,6 +101,7 @@ export const usersDev:Card[] = [
       linkedin: "juniormedehou",
     },
   }
+
 ]
 
 
