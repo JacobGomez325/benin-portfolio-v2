@@ -13,9 +13,7 @@ The advantage here is that everyone can contribute to the project.
 ![1714285840384](image/add-portfolio/1714285840384.png)
 
 2. **Create a new copy of the project on your repository**
-
 3. **Create a new branch (add/your-name)**
-
 4. **Explore the files and go to data/users.ts**
 
 You'll find an array of objects there. Here's an example entry:
@@ -140,3 +138,7 @@ socials: {
 ```
 
 For now, we only have 3 social networks, but everything is optional. If you only have Twitter, just provide your handle. If you don't have LinkedIn, you can remove the key from the object, everything is optional.
+
+12. **Submit a pull request**
+
+Once the data is added, submit a PR for validation.

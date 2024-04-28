@@ -1,4 +1,3 @@
-
 ### **Bienvenue dans le portfolio de Benin.**
 
 Pour ajouter votre profil à notre base de données de portfolio, cliquez sur le bouton **add your portfolio** dans la barre de navigation.
@@ -139,3 +138,7 @@ socials: {
 ```
 
 Pour l'instant, nous avons seulement 3 réseaux sociaux, mais tout est optionnel. Si vous n'avez que Twitter, renseignez simplement votre identifiant. Si vous n'avez pas de LinkedIn, vous pouvez retirer la clé de l'objet, tout est optionnel.
+
+12. **Soumettre une pull request**
+
+Une fois les données ajoutées, soumettez une PR pour validation.
