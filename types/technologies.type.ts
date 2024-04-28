@@ -9,7 +9,8 @@ export enum FrontendTechnology {
   TailwindCSS = "Tailwind CSS",
   HTML = "HTML",
   HTMX = "HTMX",
-  JSX = "JSX"
+  JSX = "JSX",
+  JavaScript = "JavaScript"
 }
 
 export enum BackendTechnology {
@@ -18,6 +19,7 @@ export enum BackendTechnology {
   NodeJS_AdonisJS = "Node.js - AdonisJS",
   NodeJS_Koa = "Node.js - Koa",
   NodeJS_SailsJS = "Node.js - Sails.js",
+  Python = "Python",
   Python_Django = "Python - Django",
   Python_Flask = "Python - Flask",
   Java_SpringBoot = "Java - Spring Boot",
@@ -31,6 +33,8 @@ export enum BackendTechnology {
   CSharp_DOTNETCore = "C# - .NET Core",
   CSharp_ASPNET_MVC = "C# - ASP.NET MVC",
   Bun_ElysiaJS =  "Bun - Elysia.js",
+  RustLang = "RustLang",
+  GoLang = "GoLang"
 }
 
 
@@ -75,6 +79,11 @@ export enum Web3Technology {
 export enum DataTechnology {
   SQL = "SQL",
   NoSQL = "NoSQL",
+  MySQL = "MySQL",
+  PostgreSQL = "PostgreSQL",
+  SQlite = "SQlite",
+  MongoDB = "MongoDB",
+  Redis = 'Redis',
   BigData_tools = "Big Data - tools: Hadoop, Spark",
   ApacheKafka = "Apache Kafka",
   ApacheFlink = "Apache Flink",
