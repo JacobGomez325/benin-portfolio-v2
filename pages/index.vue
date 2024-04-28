@@ -4,7 +4,7 @@
   <main id="top" class="bg-color-main ">
     <div class="md:container md:mx-auto px-4 md:px-0  py-8 grid lg:grid-cols-main-grid lg:gap-6 sm:grid-cols-1 sm:gap-4">
       <!-- Mon filtre -->
-      <div  :class="{'sticky h-[580px] top-[1px]': filteredDevelopers.length >= 4 ,'static h-full':  filteredDevelopers.length < 4  }" >
+      <div  :class="{'sm:sticky sm:h-[580px] top-[1px]': filteredDevelopers.length >= 4 ,'static h-full':  filteredDevelopers.length < 4  }" >
         <h1 class="text-2xl font-bold text-white py-3">Filter by</h1>
         <FilterTags 
         :items = myTags
