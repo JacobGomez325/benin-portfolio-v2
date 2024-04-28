@@ -18,7 +18,9 @@
         animation = "hover:opacity-80  transition-all duration-200"
         other-style = "px-4 py-2 rounded-md text-md"
         display="md:block hidden"
-      >add your portfolio</my-button>
+      >
+    <a href="https://github.com/JacobGomez325/benin-portfolio-v2/blob/master/add.portfolio-en.md" target="_blank">add your portfolio</a>
+    </my-button>
       
     </div>
     
