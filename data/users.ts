@@ -192,4 +192,23 @@ export const usersDev: Card[] = [
       linkedin: "shalom-dosseh-4a484a262",
     },
   },
+
+  {
+    name: "Loïc Farel",
+    link: "http://loicfarel.netlify.app/",
+    linkSlug: "loicfarel.dev",
+    tags: [Category.Frontend, Category.Backend],
+    technology: [
+      FrontendTechnology.VueJS,
+      FrontendTechnology.NuxtJS,
+      FrontendTechnology.TailwindCSS,
+    ],
+    description:
+      "Web Developer (Js/Ts/VueJs/NuxtJS/MongoDB). I build exceptional and accessible digital solutions for the web.",
+    socials: {
+      twitter: "loicfarel",
+      github: "loicfarel",
+      linkedin: "loicfarele",
+    },
+  },
 ];
