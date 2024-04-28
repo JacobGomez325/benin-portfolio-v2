@@ -14,7 +14,7 @@
         other-style = "px-4 py-2 rounded-md text-md my-2"
         display="md:hidden block"
       >    
-      <a href="https://github.com/JacobGomez325/benin-portfolio-v2" target="_blank">add your portfolio</a>
+      <a href="https://github.com/JacobGomez325/benin-portfolio-v2/blob/master/add.portfolio-en.md" target="_blank">add your portfolio</a>
       </my-button>
       <my-button 
         text-color = "text-white font-bold " 
