@@ -219,4 +219,30 @@ export const usersDev: Card[] = [
       linkedin: "loicfarele",
     },
   },
+  {
+    name: "Freddy Agbona",
+    link: "https://fredthedev.com",
+    linkSlug: "fredthedev.com",
+    tags: [Category.Frontend, Category.Backend, Category.DevOps],
+    technology: [
+      FrontendTechnology.HTML,
+      FrontendTechnology.CSS,
+      FrontendTechnology.Bootstrap,
+      FrontendTechnology.TailwindCSS,
+      FrontendTechnology.JavaScript,
+      FrontendTechnology.VueJS,
+      FrontendTechnology.NuxtJS,
+      BackendTechnology.PHP,
+      BackendTechnology.PHP_Laravel,
+      BackendTechnology.Java_SpringBoot,
+      DevOpsTechnology.Docker,
+    ],
+    description:
+      "Software Developer who thrives on tackling stimulating challenges in web application design. My core strength lies in my problem-solving abilities and collaborative teamwork, allowing me to make substantial contributions to high-impact projects.My stacks are : Php, Java, Spring Boot, VueJS, Nuxt, Docker.",
+    socials: {
+      twitter: "fredthedev",
+      github: "fredagbona",
+      linkedin: "fredthedev",
+    },
+  },
 ];

@@ -6,9 +6,11 @@ export enum FrontendTechnology {
   NuxtJS = "Nuxt.js",
   CSS = "CSS",
   SASS_LESS = "SASS/LESS",
+  Bootstrap = "Bootstrap",
   TailwindCSS = "Tailwind CSS",
   HTML = "HTML",
   HTMX = "HTMX",
+  JS = "JS",
   JSX = "JSX",
   JavaScript = "JavaScript"
 }
@@ -27,6 +29,7 @@ export enum BackendTechnology {
   Java_Micronaut = "Java - Micronaut",
   Ruby_RubyOnRails = "Ruby - Ruby on Rails",
   Ruby_Sinatra = "Ruby - Sinatra",
+  PHP = "PHP",
   PHP_Laravel = "PHP - Laravel",
   PHP_Symfony = "PHP - Symfony",
   PHP_CodeIgniter = "PHP - CodeIgniter",
