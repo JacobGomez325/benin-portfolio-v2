@@ -122,7 +122,7 @@ export const usersDev: Card[] = [
   },
   {
     name: "Judicaël AHYI",
-    link: "https://kloo.me/o9i1ysqmdp",
+    link: "https://www.judicael-ahyi.com",
     linkSlug: "judicael-ahyi.com",
     tags: [
       Category.SWE,
@@ -131,13 +131,21 @@ export const usersDev: Card[] = [
       Category.Cybersecurity,
     ],
     technology: [
+      BackendTechnology.PHP_Laravel,
+      BackendTechnology.Python,
+      BackendTechnology.Python_Flask,
+      BackendTechnology.NodeJS_Koa,
+      BackendTechnology.NodeJS_Express,
+      BackendTechnology.Java_SpringBoot,
       FrontendTechnology.HTML,
       FrontendTechnology.CSS,
       FrontendTechnology.TailwindCSS,
-      FrontendTechnology.VueJS,
-      FrontendTechnology.NuxtJS,
-      BackendTechnology.NodeJS_AdonisJS,
+      DataTechnology.MySQL,
+      DataTechnology.PostgreSQL,
+      DataTechnology.MongoDB,
+      DataTechnology.Redis,
       DevOpsTechnology.Docker,
+      DevOpsTechnology.Terraform,
     ],
     description:
       "Software Engineer (#PHP #Laravel #Python #Java) & DevSecOps (Junior).",
