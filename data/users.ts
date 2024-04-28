@@ -223,7 +223,7 @@ export const usersDev: Card[] = [
     name: "Freddy Agbona",
     link: "https://fredthedev.com",
     linkSlug: "fredthedev.com",
-    tags: [Category.Frontend, Category.Backend, Category.DevOps],
+    tags: [Category.Frontend, Category.Backend, Category.DataTechnology, Category.DevOps],
     technology: [
       FrontendTechnology.HTML,
       FrontendTechnology.CSS,
@@ -235,7 +235,11 @@ export const usersDev: Card[] = [
       BackendTechnology.PHP,
       BackendTechnology.PHP_Laravel,
       BackendTechnology.Java_SpringBoot,
+      DataTechnology.SQL,
+      DataTechnology.MySQL,
+      DataTechnology.PostgreSQL,
       DevOpsTechnology.Docker,
+      DevOpsTechnology.Git_versionControl,
     ],
     description:
       "Software Developer who thrives on tackling stimulating challenges in web application design. My core strength lies in my problem-solving abilities and collaborative teamwork, allowing me to make substantial contributions to high-impact projects.My stacks are : Php, Java, Spring Boot, VueJS, Nuxt, Docker.",
