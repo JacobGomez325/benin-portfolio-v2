@@ -137,13 +137,15 @@ const filteredDevelopers = computed(() => {
       .includes(searchQuery.value.toLowerCase());
 
     // Recherche par tags
-    const tagsMatch = developer.tags.some((tag) =>
-      tag.toLowerCase().includes(searchQuery.value.toLowerCase())
+    const tagsMatch = developer.tags.some(
+      (tag) =>
+        tag && tag.toLowerCase().includes(searchQuery.value.toLowerCase())
     );
 
     // Recherche par technologies
-    const techMatch = developer.technology.some((tech) =>
-      tech.toLowerCase().includes(searchQuery.value.toLowerCase())
+    const techMatch = developer.technology.some(
+      (tech) =>
+        tech && tech.toLowerCase().includes(searchQuery.value.toLowerCase())
     );
 
     // Retourne vrai si le développeur a un nom, un tag ou une technologie correspondante
