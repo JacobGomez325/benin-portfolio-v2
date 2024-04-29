@@ -223,7 +223,12 @@ export const usersDev: Card[] = [
     name: "Freddy Agbona",
     link: "https://fredthedev.com",
     linkSlug: "fredthedev.com",
-    tags: [Category.Frontend, Category.Backend, Category.Data, Category.DevOps],
+    tags: [
+      Category.Frontend,
+      Category.Backend,
+      Category.DataTechnology,
+      Category.DevOps,
+    ],
     technology: [
       FrontendTechnology.HTML,
       FrontendTechnology.CSS,
@@ -247,6 +252,25 @@ export const usersDev: Card[] = [
       twitter: "fredthedev",
       github: "fredagbona",
       linkedin: "fredthedev",
+    },
+  },
+  {
+    name: "JOSIAS DADY Lauryne",
+    link: "https://www.linkedin.com/in/lauryne-josias-dady-3a4b051b4/",
+    linkSlug: "josiaslauryne.dev",
+    tags: [Category.Frontend],
+    technology: [
+      FrontendTechnology.VueJS,
+      FrontendTechnology.TailwindCSS,
+      FrontendTechnology.HTML,
+      FrontendTechnology.CSS,
+    ],
+    description:
+      "Frontend web developer, working with #vuejs, and learning #react",
+    socials: {
+      twitter: "",
+      github: "lauryne1",
+      linkedin: "lauryne-josias-dady-3a4b051b4",
     },
   },
 ];
