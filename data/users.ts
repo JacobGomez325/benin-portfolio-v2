@@ -223,7 +223,7 @@ export const usersDev: Card[] = [
     name: "Freddy Agbona",
     link: "https://fredthedev.com",
     linkSlug: "fredthedev.com",
-    tags: [Category.Frontend, Category.Backend, Category.DataTechnology, Category.DevOps],
+    tags: [Category.Frontend, Category.Backend, Category.Data, Category.DevOps],
     technology: [
       FrontendTechnology.HTML,
       FrontendTechnology.CSS,
