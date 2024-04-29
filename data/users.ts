@@ -272,33 +272,38 @@ export const usersDev: Card[] = [
       github: "lauryne1",
       linkedin: "lauryne-josias-dady-3a4b051b4",
     },
-    {
-      name: "Arnaud ADJOVI",
-      link: "https://www.linkedin.com/in/arnaud-adjovi/",
-      linkSlug: "arnaudadjovi.dev",
-      tags: [Category.Frontend, Category.Backend, Category.DevOps, Category.Design],
-      technology: [
-        FrontendTechnology.HTML, 
-        FrontendTechnology.CSS, 
-        FrontendTechnology.JavaScript, 
-        FrontendTechnology.ReactJS, 
-        FrontendTechnology.JSX, 
-        
-        BackendTechnology.PHP,
-        BackendTechnology.PHP_Laravel,
-        BackendTechnology.NodeJS_Express,
+  },
+  {
+    name: "Arnaud ADJOVI",
+    link: "https://www.linkedin.com/in/arnaud-adjovi/",
+    linkSlug: "arnaudadjovi.dev",
+    tags: [
+      Category.Frontend,
+      Category.Backend,
+      Category.DevOps,
+      Category.Design,
+    ],
+    technology: [
+      FrontendTechnology.HTML,
+      FrontendTechnology.CSS,
+      FrontendTechnology.JavaScript,
+      FrontendTechnology.ReactJS,
+      FrontendTechnology.JSX,
 
-        DataTechnology.SQL,
-        DataTechnology.MySQL,
+      BackendTechnology.PHP,
+      BackendTechnology.PHP_Laravel,
+      BackendTechnology.NodeJS_Express,
 
-        DevOpsTechnology.Git_versionControl        
-      ],
-      description: "FullStack web developer, working with #react #Laravel #PHP",
-      socials: {
-        twitter: "_aploon",
-        github: "aploon",
-        linkedin: "arnaud-adjovi",
-      },
+      DataTechnology.SQL,
+      DataTechnology.MySQL,
+
+      DevOpsTechnology.Git_versionControl,
+    ],
+    description: "FullStack web developer, working with #react #Laravel #PHP",
+    socials: {
+      twitter: "_aploon",
+      github: "aploon",
+      linkedin: "arnaud-adjovi",
     },
   },
 ];
