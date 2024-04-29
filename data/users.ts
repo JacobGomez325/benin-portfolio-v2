@@ -297,7 +297,7 @@ export const usersDev: Card[] = [
       socials: {
         twitter: "_aploon",
         github: "aploon",
-        linkedin: "jarnaud-adjovi",
+        linkedin: "arnaud-adjovi",
       },
     },
   },
