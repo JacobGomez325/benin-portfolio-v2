@@ -319,4 +319,16 @@ export const usersDev: Card[] = [
       linkedin: "renaud-horacio-gaffan-b73778193/",
     },
   },
+  { name: "AHOUANSE Jean-Louis",
+    link: "https://www.linkedin.com/in/jeanlouis-ahs/",
+    linkSlug:"jeanlouisahs.dev",
+    tags: [Category.SWE,Category.Frontend,Category.Backend],
+    technology:[FrontendTechnology.Angular, FrontendTechnology.VueJS, FrontendTechnology.Astro,BackendTechnology.PHP_Symfony, BackendTechnology.Java_SpringBoot],
+    description:"Software engineer",
+    socials: {
+      twitter: "JeanlouisAhs",
+      github: "JeanlouisAhs",
+      linkedin: "jeanlouis-ahs",
+    },
+  },
 ];
