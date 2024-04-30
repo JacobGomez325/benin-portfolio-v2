@@ -25,13 +25,13 @@
           >
             <input
               v-model="technologyCheckbox"
-              :id="`${index} ${techno.name}`"
+              :id="`checkbox-${index}`"
               type="checkbox"
               :value="techno.name"
-              class="w-4 h-4 bg-gray-100 border-gray-300 rounded"
+              class="w-4 h-4 bg-gray-100 cursor-pointer border-gray-300 rounded"
             />
             <label
-              for="default-checkbox"
+              :for="`checkbox-${index}`"
               class="ms-2 text-sm font-medium whitespace-pre-wrap text-white"
             >
               {{ techno.name }}
@@ -69,7 +69,7 @@
   </main>
   <TheFooter />
   <nuxt-link
-    to="#top"
+    @click="scrollToTop()"
     class="bg-primary fixed md:right-10 right-8 md:bottom-5 bottom-3 p-2 rounded-full"
   >
     <svg
@@ -152,6 +152,13 @@ const filteredDevelopers = computed(() => {
     return nameMatch || tagsMatch || techMatch;
   });
 });
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
 function searchByTechnologies(data: Card[], technologies: string[]) {
   const matchingItems: Card[] = [];
