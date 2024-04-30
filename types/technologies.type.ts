@@ -12,7 +12,8 @@ export enum FrontendTechnology {
   HTMX = "HTMX",
   JS = "JS",
   JSX = "JSX",
-  JavaScript = "JavaScript"
+  JavaScript = "JavaScript",
+  Astro = "Astro"
 }
 
 export enum BackendTechnology {
