@@ -113,6 +113,7 @@ const isThisSearch = ref<boolean>(true);
 const myTags = reactive<Categories[]>(tags.categories);
 // devs list
 let cardProps = reactive<Card[]>(usersDev);
+
 let filtreUserData = reactive<Card[]>([]);
 // technology list data
 const technologyCheckbox = ref([]);
