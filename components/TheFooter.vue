@@ -11,7 +11,7 @@
           href="https://github.com/JacobGomez325/benin-portfolio-v2"
           class="text-primary"
         >
-          <!-- Utilisation de l'icône Github -->
+        <!-- Utilisation de l'icône Github -->
           <GithubLogo />
         </a>
       </div>
