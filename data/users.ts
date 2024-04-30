@@ -306,4 +306,17 @@ export const usersDev: Card[] = [
       linkedin: "arnaud-adjovi",
     },
   },
+
+  { name: "GAFFAN Renaud",
+    link: "https://www.renaudhorace.tech",
+    linkSlug:"renaudhorace.tech",
+    tags: [Category.Mobile, Category.Frontend,Category.DevOps],
+    technology:[FrontendTechnology.ReactJS, FrontendTechnology.NextJS, FrontendTechnology.Astro, FrontendTechnology.TailwindCSS,BackendTechnology.PHP_Laravel, BackendTechnology.PHP_Symfony, MobileTechnology.Flutter, DevOpsTechnology.Docker],
+    description:"Flutter and Frontend Developer",
+    socials: {
+      twitter: "renaudhorace",
+      github: "renaudhorace",
+      linkedin: "renaud-horacio-gaffan-b73778193/",
+    },
+  },
 ];
