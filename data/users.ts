@@ -70,6 +70,25 @@ export const usersDev: Card[] = [
     socials: null,
   },
   {
+    name: "Loïc HACHEME",
+    link: "www.linkedin.com/in/loic-hacheme",
+    linkSlug: "loic.dev",
+    tags: [Category.Mobile, Category.Backend],
+    technology: [
+      MobileTechnology.Flutter,
+      MobileTechnology.Java_Android,
+      MobileTechnology.Kotlin_Android,
+      BackendTechnology.Java_SpringBoot,
+    
+    ],
+    description: "Backend and mobile developer, working with #java,#kotlin,#flutter",
+    socials: {
+      twitter: "spencer2k21",
+      github: "spencer2k19",
+      linkedin: "loic-hacheme",
+    },
+  },
+  {
     name: "DEGNON Tobi",
     link: "https://oluwatobi.dev",
     linkSlug: "oluwatobi.dev",
