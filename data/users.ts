@@ -100,6 +100,19 @@ export const usersDev:Card[] = [
       github: "NemesisX1",
       linkedin: "juniormedehou",
     },
+  },
+  {
+    name: "AMIDOU Cissé",
+    link: "https://www.cissedev.com/",
+    linkSlug: "cissedev.com",
+    tags: [Category.Frontend],
+    technology: [FrontendTechnology.ReactJS,FrontendTechnology.NextJS,FrontendTechnology.TailwindCSS],
+    description: "Frontend Developer",
+    socials: {
+      twitter: "TairouT",
+      github: "tcisse",
+      linkedin: "taïrou-cissé-a67841281"
+    }
   }
 
 ]
