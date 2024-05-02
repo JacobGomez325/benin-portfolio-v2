@@ -1,6 +1,6 @@
 <template>
-  <header class="bg-secondary  py-6">
-    <div class="md:container md:mx-auto px-4 md:px-0">
+  <header class="bg-secondary   py-6">
+    <div class="md:container md:mx-auto px-6">
       <TheNavbar @get-search-value="getSearchValue" />
       <div class="header-contnent my-6">
         <h1 class="md:text-5xl text-3xl font-bold text-white pt-1 pb-2 ">Benin Portfolios</h1>

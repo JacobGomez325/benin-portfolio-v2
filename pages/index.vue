@@ -1,14 +1,13 @@
 <template>
   <TheHeader @get-search-value="getSearchValue" />
-
-  <main id="top" class="bg-color-main">
+  <main id="top" class="bg-color-main sm:px-6 ">
     <div
       class="md:container md:mx-auto px-4 md:px-0 py-8 grid lg:grid-cols-main-grid lg:gap-6 sm:grid-cols-1 sm:gap-4"
     >
       <!-- Mon filtre -->
       <div
         :class="{
-          'sticky h-[580px] top-[1px]': filteredDevelopers.length >= 4,
+          'lg:sticky lg:h-[580px] lg:top-[1px]': filteredDevelopers.length >= 4,
           'static h-full': filteredDevelopers.length < 4,
         }"
       >
@@ -72,23 +71,7 @@
     @click="scrollToTop()"
     class="bg-primary fixed md:right-10 right-8 md:bottom-5 bottom-3 p-2 rounded-full"
   >
-    <svg
-      stroke="currentColor"
-      fill="none"
-      stroke-width="2"
-      viewBox="0 0 24 24"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      height="1.3em"
-      width="1.3em"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <desc></desc>
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M9 20v-8h-3.586a1 1 0 0 1 -.707 -1.707l6.586 -6.586a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 -.707 1.707h-3.586v8a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
-      ></path>
-    </svg>
+    <IconsTop width="1.1em" height="1.1em" /> 
   </nuxt-link>
 </template>
 
@@ -96,7 +79,7 @@
 import tags from "@/data/tags.json";
 import { usersDev } from "~/data/users";
 import { type Card } from "@/types/card.type";
-import type { Technology, Categories } from "~/types/tags.type";
+import type { Technology, Categories,UserTagCounts } from "~/types/tags.type";
 
 type FilterData = {
   showTechnologies: boolean;
@@ -118,6 +101,20 @@ let filtreUserData = reactive<Card[]>([]);
 // technology list data
 const technologyCheckbox = ref([]);
 const searchQuery = ref<string>("");
+
+onMounted(() => {
+  const tagCounts = countUsersByTag(usersDev)
+  myTags.forEach((category:Categories) => {
+    // Vérifier si la catégorie existe dans les données de tagCounts
+    if (tagCounts[category.name]) {
+      category.nbre = tagCounts[category.name];
+    } else {
+      category.nbre = 0; // Si la catégorie n'existe pas, nbre est mis à 0
+    }
+  });
+  
+ 
+})
 
 function getTechnologie(item: Technology[]) {
   filterData.technologies = item;
@@ -184,6 +181,29 @@ watch(searchQuery, (newValue: string, oldValue: string) => {
   isThisSearch.value = true;
   //technologyCheckbox.value = []
 });
+
+function countUsersByTag(users: Card[]) {
+  const tagCounts: UserTagCounts = {};
+
+  // Parcourir chaque utilisateur
+  users.forEach(user => {
+    // Parcourir chaque tag de l'utilisateur
+    user.tags.forEach(tag => {
+      // Incrémenter le compteur pour ce tag
+      tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+    });
+  });
+
+  // Calculer la somme totale des utilisateurs pour tous les tags
+  const totalCount = Object.values(tagCounts).reduce((total, count) => total + count, 0);
+
+  // Ajouter la clé spéciale "All" avec la somme totale
+  tagCounts.All = totalCount;
+
+  return tagCounts;
+}
+
+
 </script>
 
 <style scoped></style>

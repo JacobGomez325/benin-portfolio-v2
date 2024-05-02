@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-3 bg-secondary">
+  <footer class="py-3 bg-secondary px-6">
     <div
       class="md:container px-4 md:mx-auto items-center flex justify-between pr-20"
     >
@@ -12,7 +12,7 @@
           class="text-primary"
         >
         <!-- Utilisation de l'icône Github -->
-          <GithubLogo />
+          <IconsSocialsGithub width="1.8em" height="1.8em" />
         </a>
       </div>
     </div>
@@ -22,9 +22,6 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-// Importer le composant Github.vue depuis le dossier icon
-import GithubLogo from "@/components/icons/GithubLogo.vue";
-
 
 const year = ref(new Date().getFullYear());
 </script>

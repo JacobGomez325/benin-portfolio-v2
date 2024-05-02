@@ -4,7 +4,7 @@
   >
     <div class="flex my-5 justify-center">
       <span>
-        <Empty class="w-[149px] h-[142px]" />
+        <IconsEmpty class="w-[149px] h-[142px]" />
       </span>
     </div>
     <div class="flex my-3 w-full justify-center">
@@ -14,5 +14,4 @@
 </template>
 
 <script setup lang="ts">
-import Empty from "./icons/Empty.vue";
 </script>
