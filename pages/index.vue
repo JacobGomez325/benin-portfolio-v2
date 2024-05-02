@@ -1,6 +1,16 @@
 <template>
+ <div class="">
   <TheHeader @get-search-value="getSearchValue" />
-  <main id="top" class="bg-color-main sm:px-6 ">
+  <main id="top" 
+    class="bg-color-main
+     sm:px-6 h-screen
+     overflow-auto
+      scrollbar-thumb-yellow
+      scrollbar-thumb-rounded
+      scrollbar-track-yellow-lighter
+      scrollbar-w-2
+      scrolling-touch
+      ">
     <div
       class="md:container md:mx-auto px-4 md:px-0 py-8 grid lg:grid-cols-main-grid lg:gap-6 sm:grid-cols-1 sm:gap-4"
     >
@@ -73,6 +83,7 @@
   >
     <IconsTop width="1.1em" height="1.1em" /> 
   </nuxt-link>
+ </div>
 </template>
 
 <script setup lang="ts">
@@ -206,4 +217,25 @@ function countUsersByTag(users: Card[]) {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.scrollbar-w-2::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.4rem;
+  cursor: pointer;
+
+}
+
+.scrollbar-track-yellow-lighter::-webkit-scrollbar-track {
+  background-color:  #1e293b;
+  cursor: pointer;
+}
+
+.scrollbar-thumb-yellow::-webkit-scrollbar-thumb {
+  background-color: #FBCF16;
+  cursor: pointer;
+}
+
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+  border-radius: 0rem;
+}
+</style>
