@@ -6,5 +6,7 @@ export enum Category {
   DevOps = "DevOps",
   Web3 = "Web3",
   Data = "Data",
-  Cybersecurity = "Cybersecurity"
+  SWE = "Software Engineer",
+  Cybersecurity = "Cybersecurity",
+  DataTechnology = "Data"
 }

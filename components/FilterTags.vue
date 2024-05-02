@@ -1,7 +1,6 @@
 <template>
 
   <div class="flex flex-wrap ">
-    
     <div v-for="(item, index) in props.items" :key="index" :class="{
       'bg-primary': item.isActive === true,
       'border border-primary hover:bg-primary text-white  hover:text-black': item.isActive === false,
@@ -10,7 +9,7 @@
       @click="toogleTags(item)">
       <span v-if="!item.isActive" class="font-semibold">#</span>
       <span v-else class="block bg-black w-2 h-2 rounded-full"></span>
-      <span class="font-semibold"> {{ item.name }} </span>
+      <span class="font-semibold"> {{ item.name }} ( {{ item.nbre }} ) </span>
     </div>
 
   </div>
