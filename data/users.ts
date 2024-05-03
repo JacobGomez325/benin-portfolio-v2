@@ -205,7 +205,7 @@ export const usersDev: Card[] = [
       github: "tcisse",
       linkedin: "taïrou-cissé-a67841281"
     }
-  }
+  },
   {
     name: "DOSSEH Shalom",
     link: "https://www.linkedin.com/in/shalom-dosseh-4a484a262/",
