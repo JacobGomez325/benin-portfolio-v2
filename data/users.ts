@@ -193,7 +193,19 @@ export const usersDev: Card[] = [
       linkedin: "juniormedehou",
     },
   },
-
+  {
+    name: "AMIDOU Cissé",
+    link: "https://www.cissedev.com/",
+    linkSlug: "cissedev.com",
+    tags: [Category.Frontend],
+    technology: [FrontendTechnology.ReactJS,FrontendTechnology.NextJS,FrontendTechnology.TailwindCSS],
+    description: "Frontend Developer",
+    socials: {
+      twitter: "TairouT",
+      github: "tcisse",
+      linkedin: "taïrou-cissé-a67841281"
+    }
+  }
   {
     name: "DOSSEH Shalom",
     link: "https://www.linkedin.com/in/shalom-dosseh-4a484a262/",
@@ -308,7 +320,6 @@ export const usersDev: Card[] = [
       FrontendTechnology.JavaScript,
       FrontendTechnology.ReactJS,
       FrontendTechnology.JSX,
-
       BackendTechnology.PHP,
       BackendTechnology.PHP_Laravel,
       BackendTechnology.NodeJS_Express,
