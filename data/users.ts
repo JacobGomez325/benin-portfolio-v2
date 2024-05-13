@@ -381,5 +381,23 @@ export const usersDev: Card[] = [
       github: "okobsamoht",
       linkedin: "okobsamoht",
     },
+  },
+  {
+    name: "Juliana OTENIA",
+    link: "https://www.linkedin.com/in/juliana-otenia-7b0140236/",
+    linkSlug: "dominiatrix.dev",
+    tags: [Category.Frontend, Category.Design],
+    technology: [
+        FrontendTechnology.ReactJS,
+        FrontendTechnology.Bootstrap,
+        DesignTechnology.Figma,
+    ],
+    description:
+        "Frontend web developer and UI/UX Designer, working with #react #js #ts #figma",
+    socials: {
+      twitter: "TrixDomini33551",
+      github: "dominiatrix",
+      linkedin: "juliana-otenia-7b0140236",
+    },
   }
 ];
