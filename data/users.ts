@@ -381,5 +381,30 @@ export const usersDev: Card[] = [
       github: "okobsamoht",
       linkedin: "okobsamoht",
     },
+  },
+
+    {
+    name: "VEGBA Lux",
+    link: "https://bento.me/vegbalux",
+    linkSlug: "vegbalux.dev",
+    tags: [Category.Frontend, Category.Backend, Category.Mobile],
+    technology: [
+      FrontendTechnology.HTML,
+      FrontendTechnology.CSS,
+      FrontendTechnology.Bootstrap,
+      FrontendTechnology.Javascript,
+      FrontendTechnology.NextJS,
+      BackendTechnology.PHP_Symfony,
+      BackendTechnology.PHP,
+      DesignTechnology.Figma,
+      MobileTechnology.Flutter
+    ],
+    description:
+      " I'm a Full Stack Developer based in Paris, France, passionate about crafting digital experiences ",
+    socials: {
+      twitter: "LuxVegba",
+      github: "iimAtomic",
+      linkedin: "vegbalux",
+    },
   }
 ];
