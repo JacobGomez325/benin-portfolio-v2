@@ -9,6 +9,8 @@ import {
   Web3Technology,
   DataTechnology,
   CybersecurityTechnology,
+  CloudTechnology,
+  SystemsTechnology,
 } from "~/types/technologies.type";
 
 export const usersDev: Card[] = [
@@ -380,6 +382,39 @@ export const usersDev: Card[] = [
       twitter: "okobsamoht",
       github: "okobsamoht",
       linkedin: "okobsamoht",
+    },
+  },
+  {
+    name: "Edouard HINVI",
+    link: "https://www.linkedin.com/in/edouardhinvi",
+    linkSlug: "edouardhinvi",   
+    tags: [Category.Frontend, Category.Backend, Category.DevOps, Category.Cloud],
+    technology: [
+        DevOpsTechnology.Docker,
+        DevOpsTechnology.Ansible,
+        DevOpsTechnology.Kubernetes,
+        CloudTechnology.Openshift,
+        SystemsTechnology.Linux_RedHat,
+        DevOpsTechnology.Terraform,
+        CloudTechnology.GCP,
+        CloudTechnology.AWS,
+        CloudTechnology.VMWare,
+        CloudTechnology.BareMetal,
+        CloudTechnology.OnPremises,
+        FrontendTechnology.ReactJS,
+        FrontendTechnology.Bootstrap,
+        BackendTechnology.Python,
+        BackendTechnology.Python_Flask,
+        BackendTechnology.Python_FastAPI,
+        MobileTechnology.ReactNative,
+        BackendTechnology.NodeJS_Express,
+    ],
+    description:
+        "Ingénieur DevOps @ Crédit Agricole Group Infrastructure Platform | Ansible, AAP, RedHat, Docker, Kubernetes, Openshift, AWS, Linux, Python, JS, ReactJS",
+    socials: {
+      twitter: "douardoInc",
+      github: "edouardhinvi",
+      linkedin: "edouardhinvi",
     },
   }
 ];
