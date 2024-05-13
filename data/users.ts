@@ -79,7 +79,7 @@ export const usersDev: Card[] = [
       MobileTechnology.Java_Android,
       MobileTechnology.Kotlin_Android,
       BackendTechnology.Java_SpringBoot,
-    
+
     ],
     description: "Backend and mobile developer, working with #java,#kotlin,#flutter",
     socials: {
@@ -361,4 +361,25 @@ export const usersDev: Card[] = [
       linkedin: "jeanlouis-ahs",
     },
   },
+  {
+    name: "Thomas BOKO",
+    link: "https://www.linkedin.com/in/okobsamoht",
+    linkSlug: "okobsamoht",
+    tags: [Category.Frontend, Category.Backend, Category.Mobile, Category.Web3],
+    technology: [
+        FrontendTechnology.ReactJS,
+        FrontendTechnology.Bootstrap,
+        BackendTechnology.GoLang,
+        BackendTechnology.NodeJS_Express,
+        MobileTechnology.ReactNative,
+        Web3Technology.Web3JS
+    ],
+    description:
+        "",
+    socials: {
+      twitter: "okobsamoht",
+      github: "okobsamoht",
+      linkedin: "okobsamoht",
+    },
+  }
 ];
