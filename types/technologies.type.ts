@@ -25,6 +25,7 @@ export enum BackendTechnology {
   Python = "Python",
   Python_Django = "Python - Django",
   Python_Flask = "Python - Flask",
+  Python_FastAPI = "Python - FastAPI",
   Java_SpringBoot = "Java - Spring Boot",
   Java_PlayFramework = "Java - Play Framework",
   Java_Micronaut = "Java - Micronaut",
@@ -69,7 +70,7 @@ export enum DevOpsTechnology {
   Kubernetes = "Kubernetes",
   Terraform = "Terraform",
   Ansible = "Ansible",
-  Puppet = "Puppet"
+  Puppet = "Puppet",
 }
 
 export enum Web3Technology {
@@ -110,4 +111,25 @@ export enum CybersecurityTechnology {
   ISO_IEC27001 = "ISO/IEC 27001",
   SIEM = "SIEM",
   DigitalForensics = "Digital Forensics"
+}
+
+export enum CloudTechnology {
+  Openshift = "Openshift",
+  AWS = "AWS",
+  GCP = "GCP",
+  Azure = "Azure",
+  BareMetal = "Bare Metal",
+  OnPremises = "On Premises",
+  VMWare = "VMWare"
+}
+
+export enum SystemsTechnology {
+  Linux = "Linux",
+  Linux_Debian = "Debian",
+  Linux_Ubuntu = "Ubuntu",
+  Linux_CentOS = "CentOS",
+  Linux_RedHat = "RedHat",
+  UNIX = "UNIX",
+  UNIX_zOS = "z/OS",
+  Windows = "Windows",
 }
