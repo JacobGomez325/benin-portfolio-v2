@@ -95,10 +95,12 @@ import type { Technology, Categories,UserTagCounts } from "~/types/tags.type";
 type FilterData = {
   showTechnologies: boolean;
   technologies: Technology[];
+  currentTag: string;
 };
 const filterData = reactive<FilterData>({
   showTechnologies: false,
   technologies: [],
+  currentTag: 'All'
 });
 
 const isThisSearch = ref<boolean>(true);
@@ -127,10 +129,13 @@ onMounted(() => {
  
 })
 
-function getTechnologie(item: Technology[]) {
-  filterData.technologies = item;
+function getTechnologie(item: Categories) {    
+  filterData.technologies = item.technologies;
+  filterData.currentTag = item.name;
+  filterData.showTechnologies = item.name !== 'All';
   technologyCheckbox.value = [];
-  filterData.showTechnologies = true;
+  
+  // filterData.showTechnologies = true;
 }
 
 // get Search value in the Header component
@@ -170,16 +175,34 @@ const scrollToTop = () => {
 };
 
 function searchByTechnologies(data: Card[], technologies: string[]) {
+  
   const matchingItems: Card[] = [];
+
+  if(filterData.currentTag === 'All') {
+    return data;
+  }
+
+  if (technologies.length === 0 && filterData.currentTag) {
+    return searchByTags(filterData.currentTag);
+  }
 
   data.forEach((item) => {
     const itemTechnologies = item.technology;
-    if (technologies.every((tech) => itemTechnologies.includes(tech))) {
+    // if (technologies.every((tech) => itemTechnologies.includes(tech))) {
+    //   matchingItems.push(item);
+    // }
+    if (technologies.some((tech) => itemTechnologies.includes(tech))) {
       matchingItems.push(item);
     }
   });
 
   return matchingItems;
+}
+
+function searchByTags(tag: string) {
+  return cardProps.filter((developer) => {
+    return developer.tags.includes(tag);
+  });
 }
 
 watch(technologyCheckbox, (newValue: string[], oldValue: string[]) => {
@@ -189,7 +212,10 @@ watch(technologyCheckbox, (newValue: string[], oldValue: string[]) => {
 });
 watch(searchQuery, (newValue: string, oldValue: string) => {
   //alert('ddd')
-  isThisSearch.value = true;
+  // if  {
+  //   isThisSearch.value = false;
+  // }
+  isThisSearch.value = !(newValue.length === 0 && filterData.currentTag !== 'All');
   //technologyCheckbox.value = []
 });
 
