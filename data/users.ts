@@ -13,6 +13,8 @@ import {
   SystemsTechnology,
 } from "~/types/technologies.type";
 
+import Link from "../components/icons/Link.vue";
+
 export const usersDev: Card[] = [
   {
     name: "Gomez jacob",
@@ -200,7 +202,7 @@ export const usersDev: Card[] = [
     link: "https://www.cissedev.com/",
     linkSlug: "cissedev.com",
     tags: [Category.Frontend],
-    technology: [FrontendTechnology.ReactJS,FrontendTechnology.NextJS,FrontendTechnology.TailwindCSS],
+    technology: [FrontendTechnology.ReactJS, FrontendTechnology.NextJS, FrontendTechnology.TailwindCSS],
     description: "Frontend Developer",
     socials: {
       twitter: "TairouT",
@@ -339,24 +341,26 @@ export const usersDev: Card[] = [
     },
   },
 
-  { name: "GAFFAN Renaud",
+  {
+    name: "GAFFAN Renaud",
     link: "https://www.renaudhorace.tech",
-    linkSlug:"renaudhorace.tech",
-    tags: [Category.Mobile, Category.Frontend,Category.DevOps],
-    technology:[FrontendTechnology.ReactJS, FrontendTechnology.NextJS, FrontendTechnology.Astro, FrontendTechnology.TailwindCSS,BackendTechnology.PHP_Laravel, BackendTechnology.PHP_Symfony, MobileTechnology.Flutter, DevOpsTechnology.Docker],
-    description:"Flutter and Frontend Developer",
+    linkSlug: "renaudhorace.tech",
+    tags: [Category.Mobile, Category.Frontend, Category.DevOps],
+    technology: [FrontendTechnology.ReactJS, FrontendTechnology.NextJS, FrontendTechnology.Astro, FrontendTechnology.TailwindCSS, BackendTechnology.PHP_Laravel, BackendTechnology.PHP_Symfony, MobileTechnology.Flutter, DevOpsTechnology.Docker],
+    description: "Flutter and Frontend Developer",
     socials: {
       twitter: "renaudhorace",
       github: "renaudhorace",
       linkedin: "renaud-horacio-gaffan-b73778193/",
     },
   },
-  { name: "AHOUANSE Jean-Louis",
+  {
+    name: "AHOUANSE Jean-Louis",
     link: "https://www.linkedin.com/in/jeanlouis-ahs/",
-    linkSlug:"jeanlouisahs.dev",
-    tags: [Category.SWE,Category.Frontend,Category.Backend],
-    technology:[FrontendTechnology.Angular, FrontendTechnology.VueJS, FrontendTechnology.Astro,BackendTechnology.PHP_Symfony, BackendTechnology.Java_SpringBoot],
-    description:"Software engineer",
+    linkSlug: "jeanlouisahs.dev",
+    tags: [Category.SWE, Category.Frontend, Category.Backend],
+    technology: [FrontendTechnology.Angular, FrontendTechnology.VueJS, FrontendTechnology.Astro, BackendTechnology.PHP_Symfony, BackendTechnology.Java_SpringBoot],
+    description: "Software engineer",
     socials: {
       twitter: "JeanlouisAhs",
       github: "JeanlouisAhs",
@@ -369,15 +373,15 @@ export const usersDev: Card[] = [
     linkSlug: "okobsamoht",
     tags: [Category.Frontend, Category.Backend, Category.Mobile, Category.Web3],
     technology: [
-        FrontendTechnology.ReactJS,
-        FrontendTechnology.Bootstrap,
-        BackendTechnology.GoLang,
-        BackendTechnology.NodeJS_Express,
-        MobileTechnology.ReactNative,
-        Web3Technology.Web3JS
+      FrontendTechnology.ReactJS,
+      FrontendTechnology.Bootstrap,
+      BackendTechnology.GoLang,
+      BackendTechnology.NodeJS_Express,
+      MobileTechnology.ReactNative,
+      Web3Technology.Web3JS
     ],
     description:
-        "",
+      "",
     socials: {
       twitter: "okobsamoht",
       github: "okobsamoht",
@@ -391,12 +395,12 @@ export const usersDev: Card[] = [
     linkSlug: "dominiatrix.dev",
     tags: [Category.Frontend, Category.Design],
     technology: [
-        FrontendTechnology.ReactJS,
-        FrontendTechnology.Bootstrap,
-        DesignTechnology.Figma,
+      FrontendTechnology.ReactJS,
+      FrontendTechnology.Bootstrap,
+      DesignTechnology.Figma,
     ],
     description:
-        "Frontend web developer and UI/UX Designer, working with #react #js #ts #figma",
+      "Frontend web developer and UI/UX Designer, working with #react #js #ts #figma",
     socials: {
       twitter: "TrixDomini33551",
       github: "dominiatrix",
@@ -406,34 +410,50 @@ export const usersDev: Card[] = [
   {
     name: "Edouard HINVI",
     link: "https://www.linkedin.com/in/edouardhinvi",
-    linkSlug: "edouardhinvi",   
+    linkSlug: "edouardhinvi",
     tags: [Category.Frontend, Category.Backend, Category.DevOps, Category.Cloud],
     technology: [
-        DevOpsTechnology.Docker,
-        DevOpsTechnology.Ansible,
-        DevOpsTechnology.Kubernetes,
-        CloudTechnology.Openshift,
-        SystemsTechnology.Linux_RedHat,
-        DevOpsTechnology.Terraform,
-        CloudTechnology.GCP,
-        CloudTechnology.AWS,
-        CloudTechnology.VMWare,
-        CloudTechnology.BareMetal,
-        CloudTechnology.OnPremises,
-        FrontendTechnology.ReactJS,
-        FrontendTechnology.Bootstrap,
-        BackendTechnology.Python,
-        BackendTechnology.Python_Flask,
-        BackendTechnology.Python_FastAPI,
-        MobileTechnology.ReactNative,
-        BackendTechnology.NodeJS_Express,
+      DevOpsTechnology.Docker,
+      DevOpsTechnology.Ansible,
+      DevOpsTechnology.Kubernetes,
+      CloudTechnology.Openshift,
+      SystemsTechnology.Linux_RedHat,
+      DevOpsTechnology.Terraform,
+      CloudTechnology.GCP,
+      CloudTechnology.AWS,
+      CloudTechnology.VMWare,
+      CloudTechnology.BareMetal,
+      CloudTechnology.OnPremises,
+      FrontendTechnology.ReactJS,
+      FrontendTechnology.Bootstrap,
+      BackendTechnology.Python,
+      BackendTechnology.Python_Flask,
+      BackendTechnology.Python_FastAPI,
+      MobileTechnology.ReactNative,
+      BackendTechnology.NodeJS_Express,
     ],
     description:
-        "Ingénieur DevOps @ Crédit Agricole Group Infrastructure Platform | Ansible, AAP, RedHat, Docker, Kubernetes, Openshift, AWS, Linux, Python, JS, ReactJS",
+      "Ingénieur DevOps @ Crédit Agricole Group Infrastructure Platform | Ansible, AAP, RedHat, Docker, Kubernetes, Openshift, AWS, Linux, Python, JS, ReactJS",
     socials: {
       twitter: "douardoInc",
       github: "edouardhinvi",
       linkedin: "edouardhinvi",
     },
+  },
+
+  {
+    name: "Jonathan KPEYI",
+    description: "Software Engineer from a perpective of who i want to be | Python, Javascript, Go, Scila",
+    link: "https://www.linkedin.com/in/jonathan-kpeyi",
+    linkSlug: "jonathan-kpeyi",
+    tags: [Category.SWE, Category.Backend, Category.Web3],
+    technology: [
+      BackendTechnology.Python, BackendTechnology.GoLang, FrontendTechnology.JavaScript, "Scila"
+    ],
+    socials: {
+      github: "jkpeyi",
+      linkedin: "jonathan-kpeyi",
+      twitter: "jkpeyi"
+    }
   }
 ];
