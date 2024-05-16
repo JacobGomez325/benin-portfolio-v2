@@ -144,7 +144,8 @@ function getSearchValue(searchItem: string) {
 }
 
 const filteredDevelopers = computed(() => {
-  return cardProps.filter((developer) => {
+  let developerList = (filterData.currentTag === 'All') ? cardProps.slice() : filtreUserData.slice();
+  return developerList.filter((developer) => {
     // Recherche par nom de développeur
     const nameMatch = developer.name
       .toLowerCase()
@@ -174,6 +175,7 @@ const scrollToTop = () => {
   });
 };
 
+// fraudrait changer le nom de la fonction en searchByTechnologiesOrTags
 function searchByTechnologies(data: Card[], technologies: string[]) {
   
   const matchingItems: Card[] = [];
@@ -212,10 +214,7 @@ watch(technologyCheckbox, (newValue: string[], oldValue: string[]) => {
 });
 watch(searchQuery, (newValue: string, oldValue: string) => {
   //alert('ddd')
-  // if  {
-  //   isThisSearch.value = false;
-  // }
-  isThisSearch.value = !(newValue.length === 0 && filterData.currentTag !== 'All');
+  isThisSearch.value = true;
   //technologyCheckbox.value = []
 });
 
