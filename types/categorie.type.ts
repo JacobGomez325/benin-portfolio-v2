@@ -10,5 +10,6 @@ export enum Category {
   Cybersecurity = "Cybersecurity",
   DataTechnology = "Data",
   Cloud = "Public & Private Cloud",
-  Systems = "Systems Engineering"
+  Systems = "Systems Engineering",
+  WordPress = "WordPress"
 }

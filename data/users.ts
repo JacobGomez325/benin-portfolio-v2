@@ -440,7 +440,6 @@ export const usersDev: Card[] = [
       linkedin: "edouardhinvi",
     },
   },
-
   {
     name: "Jonathan KPEYI",
     description: "Software Engineer from a perpective of who i want to be | Python, Javascript, Go, Scila",
@@ -455,5 +454,17 @@ export const usersDev: Card[] = [
       linkedin: "jonathan-kpeyi",
       twitter: "jkpeyi"
     }
-  }
+  },
+  {
+    name: "Nathan GNANKADJA",
+    link: "https://www.linkedin.com/in/nathan-gnankadja/",
+    linkSlug: "Linkedin",
+    tags: [Category.WordPress],
+    technology: [FrontendTechnology.HTML, FrontendTechnology.CSS, FrontendTechnology.JS],
+    description: "Web Developer",
+    socials: {
+      github: "nahtandev",
+      linkedin: "nathan-gnankadja",
+    },
+  },
 ];
