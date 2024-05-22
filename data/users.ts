@@ -98,7 +98,7 @@ export const usersDev: Card[] = [
     linkSlug: "oluwatobi.dev",
     tags: [Category.Backend],
     description: "Software engineer working with #python, #django, #htmx and #postgresql",
-    technology: [BackendTechnology.Python_Django, FrontendTechnology.HTMX, DataTechnology.DataTechnology, DevOpsTechnology.Docker],
+    technology: [BackendTechnology.Python_Django, FrontendTechnology.HTMX, DataTechnology.PostgreSQL, DevOpsTechnology.Docker],
     socials: {
       twitter: "tobidegnon",
       github: "Tobi-De",
