@@ -13,7 +13,8 @@ export enum FrontendTechnology {
   JS = "JS",
   JSX = "JSX",
   JavaScript = "JavaScript",
-  Astro = "Astro"
+  Astro = "Astro",
+  AlpineJS = "Alpine JS",
 }
 
 export enum BackendTechnology {
@@ -39,7 +40,8 @@ export enum BackendTechnology {
   CSharp_ASPNET_MVC = "C# - ASP.NET MVC",
   Bun_ElysiaJS =  "Bun - Elysia.js",
   RustLang = "RustLang",
-  GoLang = "GoLang"
+  GoLang = "GoLang",
+  Laravel_Livewire = "Laravel Livewire",
 }
 
 
@@ -71,6 +73,13 @@ export enum DevOpsTechnology {
   Terraform = "Terraform",
   Ansible = "Ansible",
   Puppet = "Puppet",
+  Grafana = "Grafana",
+  PaaS = "PaaS",
+  IaaS = "IaaS",
+  Serverless = "Serverless",
+  Docker_Compose = "Docker Compose",
+  Docker_Swarm = "Docker Swarm",
+  AWS = "AWS Cloud",
 }
 
 export enum Web3Technology {
