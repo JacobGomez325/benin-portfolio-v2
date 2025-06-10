@@ -13,7 +13,8 @@ export enum FrontendTechnology {
   JS = "JS",
   JSX = "JSX",
   JavaScript = "JavaScript",
-  Astro = "Astro"
+  Astro = "Astro",
+  AlpineJS = "Alpine JS",
 }
 
 export enum BackendTechnology {
@@ -25,6 +26,7 @@ export enum BackendTechnology {
   Python = "Python",
   Python_Django = "Python - Django",
   Python_Flask = "Python - Flask",
+  Python_FastAPI = "Python - FastAPI",
   Java_SpringBoot = "Java - Spring Boot",
   Java_PlayFramework = "Java - Play Framework",
   Java_Micronaut = "Java - Micronaut",
@@ -38,7 +40,8 @@ export enum BackendTechnology {
   CSharp_ASPNET_MVC = "C# - ASP.NET MVC",
   Bun_ElysiaJS =  "Bun - Elysia.js",
   RustLang = "RustLang",
-  GoLang = "GoLang"
+  GoLang = "GoLang",
+  Laravel_Livewire = "Laravel Livewire",
 }
 
 
@@ -69,7 +72,14 @@ export enum DevOpsTechnology {
   Kubernetes = "Kubernetes",
   Terraform = "Terraform",
   Ansible = "Ansible",
-  Puppet = "Puppet"
+  Puppet = "Puppet",
+  Grafana = "Grafana",
+  PaaS = "PaaS",
+  IaaS = "IaaS",
+  Serverless = "Serverless",
+  Docker_Compose = "Docker Compose",
+  Docker_Swarm = "Docker Swarm",
+  AWS = "AWS Cloud",
 }
 
 export enum Web3Technology {
@@ -110,4 +120,25 @@ export enum CybersecurityTechnology {
   ISO_IEC27001 = "ISO/IEC 27001",
   SIEM = "SIEM",
   DigitalForensics = "Digital Forensics"
+}
+
+export enum CloudTechnology {
+  Openshift = "Openshift",
+  AWS = "AWS",
+  GCP = "GCP",
+  Azure = "Azure",
+  BareMetal = "Bare Metal",
+  OnPremises = "On Premises",
+  VMWare = "VMWare"
+}
+
+export enum SystemsTechnology {
+  Linux = "Linux",
+  Linux_Debian = "Debian",
+  Linux_Ubuntu = "Ubuntu",
+  Linux_CentOS = "CentOS",
+  Linux_RedHat = "RedHat",
+  UNIX = "UNIX",
+  UNIX_zOS = "z/OS",
+  Windows = "Windows",
 }

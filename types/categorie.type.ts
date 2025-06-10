@@ -8,5 +8,9 @@ export enum Category {
   Data = "Data",
   SWE = "Software Engineer",
   Cybersecurity = "Cybersecurity",
-  DataTechnology = "Data"
+  DataTechnology = "Data",
+  Cloud = "Public & Private Cloud",
+  Systems = "Systems Engineering",
+  WordPress = "WordPress",
+  Technical_Writing = "Technical Writing",
 }

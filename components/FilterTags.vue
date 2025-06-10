@@ -30,7 +30,7 @@ function toogleTags(item: Categories) {
     }
   })
   
-  emits('send',item.technologies)
+  emits('send',item)
 }
 
 </script>
