@@ -523,4 +523,17 @@ export const usersDev: Card[] = [
   },
 },
 
+{
+  name: "Marie-Christ SAGBO",
+  link: "https://www.linkedin.com/in/marie-christ-sagbo/",
+  linkSlug: "mariechrist-sagbo",
+  tags: [Category.Frontend],
+  technology: [FrontendTechnology.ReactJS, FrontendTechnology.NextJS, FrontendTechnology.TailwindCSS],
+  description: "Frontend Developer",
+  socials: {
+    github: "mariechristsagbo",
+    linkedin: "marie-christ-sagbo",
+  },
+},
+
 ];
